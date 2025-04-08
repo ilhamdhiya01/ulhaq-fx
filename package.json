@@ -1,0 +1,30 @@
+{
+  "name": "ulhaq-fx",
+  "version": "1.0.0",
+  "description": "Collection of TypeScript utility functions",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "typescript",
+    "utils",
+    "helpers"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
