@@ -161,7 +161,7 @@ Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) fo
 
 ## Authors
 
-- [Ilham Dhiya Ulhaq](https://github.com/ilham-dhiya-ulhaq)
+- [Ilham Dhiya Ulhaq](https://github.com/ilhamdhiya01)
 
 ## Disclaimer
 
