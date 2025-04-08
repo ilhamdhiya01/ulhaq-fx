@@ -36,6 +36,17 @@ console.log(name); // Output: John
 
 const cities = resolveObjectPath(data, "user.addresses.city");
 console.log(cities); // Output: ["NY", "LA"]
+
+const data2 = [
+  { name: "John", addresses: [{ city: "NY" }, { city: "LA" }] },
+  { name: "Doe", addresses: [{ city: "NY" }, { city: "LA" }] },
+];
+
+console.log(resolveObjectPath(data2, "addresses.city"));
+// Output: ["NY", "LA"]
+
+console.log(resolveObjectPath(data2, "name"));
+// Output: ["John", "Doe"]
 ```
 
 ### extractNumber
@@ -107,10 +118,10 @@ Replaces multiple strings based on a mapping object.
 
 ```typescript
 console.log(
-  replaceString("Hello :name! aku :namaku dan dia :namanya", {
-    ":name": "John",
-    ":namaku": "Doe",
-    ":namanya": false,
+  replaceString("Hello :first! aku <last> dan dia :other", {
+    ":first": "John",
+    "<last>": "Doe",
+    ":other": false,
   })
 );
 // Output: "Hello John! aku Doe dan dia false"
@@ -134,8 +145,10 @@ console.log(
 );
 // Output: "TEST done"
 
-console.log(replaceString("1 + 1 = 2", { "+": "plus" }));
-// Output: "1 plus 1 = 2"
+console.log(
+  replaceString("1 + 1 = 2", { "+": "plus" }, { escapeRegex: false })
+);
+// Output: "Error: Invalid replacement value"
 ```
 
 ## License
@@ -157,7 +170,3 @@ This project is not affiliated with any company or organization.
 ## License
 
 MIT
-
-## Disclaimer
-
-This project is not affiliated with any company or organization.
