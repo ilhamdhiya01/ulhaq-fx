@@ -148,7 +148,7 @@ console.log(
 console.log(
   replaceString("1 + 1 = 2", { "+": "plus" }, { escapeRegex: false })
 );
-// Output: "Error: Invalid replacement value plus"
+// Output: "Error: Invalid replacement value"
 ```
 
 ## License
