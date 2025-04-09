@@ -1,12 +1,13 @@
 {
   "name": "ulhaq-fx",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Collection of TypeScript utility functions",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "CONTRIBUTING.md"
   ],
   "scripts": {
     "build": "tsup",

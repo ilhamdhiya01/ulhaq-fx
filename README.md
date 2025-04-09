@@ -157,7 +157,7 @@ MIT
 
 ## Contributing
 
-Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Contributions are welcome! Please read our [CONTRIBUTING.md](https://github.com/ilhamdhiya01/ulhaq-fx/blob/main/CONTRIBUTING.md) for details.
 
 ## Authors
 
